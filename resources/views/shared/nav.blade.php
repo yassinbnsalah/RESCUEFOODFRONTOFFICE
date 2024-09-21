@@ -2,9 +2,9 @@
   class="navbar d-block navbar-sticky navbar-expand-lg navbar-light bg-light">
   <div class="container"><a
       class="navbar-brand d-none d-sm-block me-4 order-lg-1" href="index.html">
-      <img src="img/logo-dark.png" width="142" alt="Cartzilla"></a><a
+      <img src="/img/logo-dark.png" width="142" alt="Cartzilla"></a><a
       class="navbar-brand d-sm-none me-2 order-lg-1" href="index.html"><img
-        src="img/logo-icon.png" width="74" alt="Cartzilla"></a>
+        src="/img/logo-icon.png" width="74" alt="Cartzilla"></a>
     <div class="navbar-toolbar d-flex align-items-center order-lg-3">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarCollapse"><span
@@ -42,7 +42,7 @@
                 <div class="widget mb-3"><a class="d-block"
                     href="food-delivery-category.html"><img
                       class="d-block mx-auto mb-3"
-                      src="img/food-delivery/icons/burger.svg" width="60"
+                      src="/img/food-delivery/icons/burger.svg" width="60"
                       alt="Burgers &amp; Fries">
                     <h6 class="fs-base text-center">Burgers &amp;
                       Fries</h6></a></div>
@@ -51,7 +51,7 @@
                 <div class="widget mb-3"><a class="d-block"
                     href="food-delivery-category.html"><img
                       class="d-block mx-auto mb-3"
-                      src="img/food-delivery/icons/noodles.svg" width="60"
+                      src="/img/food-delivery/icons/noodles.svg" width="60"
                       alt="Noodles">
                     <h6 class="fs-base text-center">Noodles</h6></a></div>
               </div>
@@ -59,7 +59,7 @@
                 <div class="widget mb-3"><a class="d-block"
                     href="food-delivery-category.html"><img
                       class="d-block mx-auto mb-3"
-                      src="img/food-delivery/icons/pizza.svg" width="60"
+                      src="/img/food-delivery/icons/pizza.svg" width="60"
                       alt="Pizza &amp; Pasta">
                     <h6 class="fs-base text-center">Pizza &amp;
                       Pasta</h6></a></div>
@@ -70,7 +70,7 @@
                 <div class="widget mb-3"><a class="d-block"
                     href="food-delivery-category.html"><img
                       class="d-block mx-auto mb-3"
-                      src="img/food-delivery/icons/steak.svg" width="60"
+                      src="/img/food-delivery/icons/steak.svg" width="60"
                       alt="Grill &amp; Steaks">
                     <h6 class="fs-base text-center">Grill &amp;
                       Steaks</h6></a></div>
@@ -79,7 +79,7 @@
                 <div class="widget mb-3"><a class="d-block"
                     href="food-delivery-category.html"><img
                       class="d-block mx-auto mb-3"
-                      src="img/food-delivery/icons/fish.svg" width="60"
+                      src="/img/food-delivery/icons/fish.svg" width="60"
                       alt="Fish &amp; Seafood">
                     <h6 class="fs-base text-center">Fish &amp;
                       Seafood</h6></a></div>
@@ -88,7 +88,7 @@
                 <div class="widget mb-3"><a class="d-block"
                     href="food-delivery-category.html"><img
                       class="d-block mx-auto mb-3"
-                      src="img/food-delivery/icons/healthy.svg" width="60"
+                      src="/img/food-delivery/icons/healthy.svg" width="60"
                       alt="Healthy Food">
                     <h6 class="fs-base text-center">Healthy Food</h6></a></div>
               </div>
@@ -98,7 +98,7 @@
                 <div class="widget mb-3"><a class="d-block"
                     href="food-delivery-category.html"><img
                       class="d-block mx-auto mb-3"
-                      src="img/food-delivery/icons/cuisine.svg" width="60"
+                      src="/img/food-delivery/icons/cuisine.svg" width="60"
                       alt="Haute Cuisine">
                     <h6 class="fs-base text-center">Haute Cuisine</h6></a></div>
               </div>
@@ -106,7 +106,7 @@
                 <div class="widget mb-3"><a class="d-block"
                     href="food-delivery-category.html"><img
                       class="d-block mx-auto mb-3"
-                      src="img/food-delivery/icons/chicken.svg" width="60"
+                      src="/img/food-delivery/icons/chicken.svg" width="60"
                       alt="Chicken &amp; Snaks">
                     <h6 class="fs-base text-center">Chicken &amp;
                       Snaks</h6></a></div>
@@ -115,7 +115,7 @@
                 <div class="widget mb-3"><a class="d-block"
                     href="food-delivery-category.html"><img
                       class="d-block mx-auto mb-3"
-                      src="img/food-delivery/icons/coffee.svg" width="60"
+                      src="/img/food-delivery/icons/coffee.svg" width="60"
                       alt="Coffee &amp; Desserts">
                     <h6 class="fs-base text-center">Coffee &amp;
                       Desserts</h6></a></div>

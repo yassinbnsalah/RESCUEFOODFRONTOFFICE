@@ -14,5 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home.hero');
+    return view('home.home');
+});
+Route::get('/categories', function () {
+    return view('categories.liste');
+});
+
+
+Route::get('/categorie/foods', function () {
+    return view('categorie.foods.foodpage');
+});
+
+Route::get('/{foodmarket}/foods' , function ($foodmarket) {
+    return view('foodmarket.foodsbymarket', ['foodmarket'=> $foodmarket ]);
+});
+
+Route::get('/categorie/foodmarket', function () {
+    return view('foodmarket.page');
+});
+Route::get('/{categoriename}/{id}', function ($categoriename , $id) {
+    return view('user', ['categoriename'=> $categoriename , 'id' => $id]);
 });
