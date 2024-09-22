@@ -38,6 +38,8 @@ Route::post('/blogs', [BlogController::class, 'store'])->name('Blogs.store'); //
 Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('blogs.show'); // Afficher un blog spécifique
 
 Route::post('blogs/{blog}/comments', [CommentController::class, 'store'])->name('comments.store');
+Route::resource('blogs.comments', CommentController::class)->only(['store', 'update', 'destroy']);
+
 
 Route::get('/categorie/foodmarket', function () {
     return view('foodmarket.page');

@@ -16,6 +16,9 @@
             </div>
             <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
                 <h1 class="h3 mb-0">Liste des Blogs</h1>
+                <a href="{{ route('Blogs.create') }}" class="btn btn-primary mt-3">
+                    <i class="ci-add-circle me-2"></i>Ajouter un Blog
+                </a>
             </div>
         </div>
     </div>
@@ -23,12 +26,12 @@
     <div class="container pb-5 mb-2 mb-md-4">
         <!-- Featured Posts Carousel -->
         <div class="featured-posts-carousel tns-carousel pt-5">
-        <div class="tns-carousel-inner" data-carousel-options='{"items": 2, "nav": false, "autoHeight": true, "responsive": {"0":{"items":1},"700":{"items":2,"gutter": 20},"991":{"items":2,"gutter": 30}}}'>
+            <div class="tns-carousel-inner" data-carousel-options='{"items": 2, "nav": false, "autoHeight": true, "responsive": {"0":{"items":1},"700":{"items":2,"gutter": 20},"991":{"items":2,"gutter": 30}}}'>
                 @foreach($blogs as $blog)
                 <article>
                     <a class="blog-entry-thumb mb-3" href="{{ route('blogs.show', $blog->id) }}">
                         <span class="blog-entry-meta-label fs-sm"><i class="ci-time"></i>{{ $blog->created_at->format('M d') }}</span>
-                        <img src="img\blog\featured\01.jpg" alt="Featured post">
+                        <img src="img/blog/featured/01.jpg" alt="Featured post">
                     </a>
                     <div class="d-flex justify-content-between mb-2 pt-1">
                         <h2 class="h5 blog-entry-title mb-0">
@@ -39,18 +42,17 @@
                         </a>
                     </div>
                     <div class="d-flex align-items-center fs-sm">
-    <a class="blog-entry-meta-link" href="#">
-        <div class="blog-entry-author-ava">
-            <img src="{{ asset('img/blog/meta/01.jpg') }}" alt="John Doe"> <!-- Remplacez par une image statique -->
-        </div>
-        John Doe <!-- Nom de l'auteur statique -->
-    </a>
-    <span class="blog-entry-meta-divider"></span>
-    <div class="fs-sm text-muted">
-        in <a href="#" class="blog-entry-meta-link">Lifestyle</a> <!-- Catégorie statique -->
-    </div>
-</div>
-
+                        <a class="blog-entry-meta-link" href="#">
+                            <div class="blog-entry-author-ava">
+                                <img src="{{ asset('img/blog/meta/01.jpg') }}" alt="John Doe"> <!-- Remplacez par une image statique -->
+                            </div>
+                            John Doe <!-- Nom de l'auteur statique -->
+                        </a>
+                        <span class="blog-entry-meta-divider"></span>
+                        <div class="fs-sm text-muted">
+                            in <a href="#" class="blog-entry-meta-link">Lifestyle</a> <!-- Catégorie statique -->
+                        </div>
+                    </div>
                 </article>
                 @endforeach
             </div>
