@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CommentController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +37,7 @@ Route::post('/blogs', [BlogController::class, 'store'])->name('Blogs.store'); //
 
 Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('blogs.show'); // Afficher un blog spécifique
 
+Route::post('blogs/{blog}/comments', [CommentController::class, 'store'])->name('comments.store');
 
 Route::get('/categorie/foodmarket', function () {
     return view('foodmarket.page');

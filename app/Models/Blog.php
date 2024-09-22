@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Blog extends Model
 {
+    use HasFactory;
     protected $table ='blogs';
     protected $primaryKey = 'id';
     protected $fillable = [
@@ -14,5 +15,8 @@ class Blog extends Model
             'content',
            
         ];
-        use HasFactory;
+        public function comments()
+        {
+            return $this->hasMany(Comment::class);
+        }    
 }
