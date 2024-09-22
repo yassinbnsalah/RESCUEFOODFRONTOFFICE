@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,18 +29,17 @@ Route::get('/categorie/foods', function () {
 Route::get('/{foodmarket}/foods' , function ($foodmarket) {
     return view('foodmarket.foodsbymarket', ['foodmarket'=> $foodmarket ]);
 });
-Route::get('/blogs', function () {
-    return view('Blogs.blogs');
-});
-Route::get('/blog/{id}', function ($id) {
-    return view('Blog.blog',['id' => $id]);
-});
+Route::get('/blogs', [BlogController::class, 'index'])->name('Blogs.index'); // Liste des blogs
+Route::get('/blogs/create', [BlogController::class, 'create'])->name('Blogs.create'); // Formulaire de création
+Route::post('/blogs', [BlogController::class, 'store'])->name('Blogs.store'); // Enregistrer un nouveau blog
+
+Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('blogs.show'); // Afficher un blog spécifique
+
+
 Route::get('/categorie/foodmarket', function () {
     return view('foodmarket.page');
 });
 Route::get('/{categoriename}/{id}', function ($categoriename , $id) {
     return view('user', ['categoriename'=> $categoriename , 'id' => $id]);
 });
-Route::get('/blogs', function () {
-    return view('Blogs.blogs');
-});
+

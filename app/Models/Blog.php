@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Blog extends Model
 {
-    use HasFactory;
+    protected $table ='blogs';
+    protected $primaryKey = 'id';
+    protected $fillable = [
+            'title',
+            'content',
+           
+        ];
+        use HasFactory;
 }
