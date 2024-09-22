@@ -9,9 +9,17 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $blogs = Blog::paginate(3); // Récupère les blogs avec pagination (3 par page)
-        return view('blogs.show', compact('blogs')); // Passe les blogs à la vue
+        // Paginer uniquement les 3 premiers blogs
+        $topBlogs = Blog::orderBy('created_at', 'desc')->simplePaginate(3);
+    
+        // Paginer les autres blogs après les 3 premiers
+        $otherBlogs = Blog::orderBy('created_at', 'desc')->skip(3)->simplePaginate(6); // Nombre de blogs à paginer (6 ici)
+    
+        return view('Blogs.show', compact('topBlogs', 'otherBlogs'));
     }
+    
+    
+    
     
     
 
